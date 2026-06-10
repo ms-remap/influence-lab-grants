@@ -532,13 +532,16 @@
         height: 34px;
         width: auto;
         object-fit: contain;
-        filter: brightness(0) invert(0.85) sepia(0.15);
+        filter: invert(1) brightness(0.85) sepia(0.15);
         opacity: 0.45;
         transition: opacity 0.2s;
         flex-shrink: 0;
       }
       .logos-track img:hover {
         opacity: 0.8;
+      }
+      .logos-track img[src*="7.svg"] {
+        filter: brightness(0) invert(0.85) sepia(0.15);
       }
       @keyframes marquee {
         0% {
@@ -1211,7 +1214,7 @@
   </head>
   <body>
     <nav id="nav">
-      <div class="logo">Influence<span>Lab</span> Grants</div>
+      <div class="logo">Funding <span>Lab</span></div>
       <div class="nav-links">
         <a href="#how">How it works</a>
         <a href="#grants">Grant types</a>
